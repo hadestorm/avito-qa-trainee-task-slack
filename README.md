@@ -21,10 +21,11 @@
 git clone https://github.com/hadestorm/avito-qa-trainee-task-slack
 ```
 
-Соберите проект и запустите его *(желаемый json файл с сообщениями можно передать через флаг f)*
+Соберите проект, установите зависимости и запустите его *(желаемый json файл с сообщениями можно передать через флаг f)*
 
 ```sh
 go build
+go mod download
 ./avito-qa-trainee-task-slack -f messages.json
 ```
 
